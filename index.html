@@ -6,11 +6,76 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Francisco Arenas | Full Stack Developer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.project-block {
+				margin-bottom: 3em;
+				padding-bottom: 2.5em;
+				border-bottom: 1px solid rgba(255,255,255,0.1);
+			}
+			.project-block:last-child {
+				border-bottom: none;
+				margin-bottom: 0;
+			}
+			.project-images {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 0.5em;
+				margin: 1em 0;
+			}
+			.project-images img {
+				width: 100%;
+				height: 120px;
+				object-fit: cover;
+				border-radius: 4px;
+				display: block;
+			}
+			.project-title {
+				font-size: 1.1em;
+				margin-bottom: 0.4em;
+				color: #fff;
+			}
+			.project-tags {
+				margin: 0.6em 0;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.4em;
+			}
+			.tag {
+				background: rgba(255,255,255,0.1);
+				border: 1px solid rgba(255,255,255,0.2);
+				border-radius: 3px;
+				padding: 0.15em 0.6em;
+				font-size: 0.78em;
+				color: rgba(255,255,255,0.75);
+			}
+			.project-link {
+				display: inline-block;
+				margin-top: 0.7em;
+				font-size: 0.9em;
+			}
+			.skills-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 0.5em 1.5em;
+				margin: 1em 0;
+			}
+			.skill-category {
+				font-size: 0.85em;
+			}
+			.skill-category strong {
+				display: block;
+				color: rgba(255,255,255,0.9);
+				margin-bottom: 0.2em;
+			}
+			.skill-category span {
+				color: rgba(255,255,255,0.6);
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -20,22 +85,21 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-gem"></span>
+							<span class="icon fa-code"></span>
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Dimension</h1>
-								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+								<h1>Francisco Arenas</h1>
+								<p>Desarrollador Web Full Stack &amp; Ingeniero en Telecomunicaciones<br />
+								Backend-oriented · NestJS · React · PostgreSQL · Flutter</p>
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li><a href="#about">Sobre mí</a></li>
+								<li><a href="#projects">Proyectos</a></li>
+								<li><a href="#skills">Skills</a></li>
+								<li><a href="#contact">Contacto</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -43,307 +107,211 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-							</article>
-
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-							</article>
-
 						<!-- About -->
 							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<h2 class="major">Sobre mí</h2>
+								<p>
+									Desarrollador Web Full Stack orientado al Backend, con experiencia en la construcción de APIs RESTful, 
+									arquitecturas escalables, deployment en la nube e integración de servicios externos.
+								</p>
+								<p>
+									Mi background en Ingeniería en Telecomunicaciones, combinado con mi formación en el Bootcamp SoyHenry, 
+									me permite abordar los proyectos con una visión técnica sólida y una comprensión clara de las necesidades 
+									del usuario final. Soy autodidacta, orientado a resultados y con rápida capacidad de adaptación a nuevas tecnologías.
+								</p>
+								<p>
+									Mi experiencia previa en atención al cliente y creación de contenido digital me permite traducir requerimientos 
+									de negocio en soluciones técnicas efectivas y centradas en la experiencia del usuario.
+								</p>
+								<hr />
+								<h3>Educación</h3>
+								<p>
+									🎓 <strong>Ingeniero en Telecomunicaciones</strong> — Universidad Fermín Toro (2023)<br />
+									💻 <strong>Desarrollador Web Full Stack</strong> — Bootcamp SoyHenry (2025)
+								</p>
+								<hr />
+								<h3>Idiomas</h3>
+								<p>🌐 Inglés B2 Intermedio-Alto — Certificado EF SET (55/100)</p>
+							</article>
+
+						<!-- Projects -->
+							<article id="projects">
+								<h2 class="major">Proyectos</h2>
+
+								<!-- Proyecto 1: Kino -->
+								<div class="project-block">
+									<h3 class="project-title">🎬 Kino — Plataforma de Gestión Cinematográfica</h3>
+									<div class="project-images">
+										<img src="images/kino1.jpg" alt="Kino screenshot 1" />
+										<img src="images/kino2.jpg" alt="Kino screenshot 2" />
+										<img src="images/kino3.jpg" alt="Kino screenshot 3" />
+									</div>
+									<p>
+										Plataforma integral para la gestión de franquicias de cine con múltiples sucursales. 
+										Centraliza la venta de tickets y productos, administración de usuarios, salas y proyecciones, 
+										pasarela de pagos, autenticación con terceros y análisis de ingresos. Desarrollé 
+										módulos backend en NestJS, diseñé el modelo de datos relacional, integré Supabase y 
+										Google Maps API, y documenté las APIs con Swagger. Fui seleccionado por el equipo 
+										para presentar y defender el proyecto ante el evaluador final.
+									</p>
+									<div class="project-tags">
+										<span class="tag">NestJS</span>
+										<span class="tag">TypeScript</span>
+										<span class="tag">PostgreSQL</span>
+										<span class="tag">React</span>
+										<span class="tag">Supabase</span>
+										<span class="tag">Google Maps API</span>
+										<span class="tag">Swagger</span>
+										<span class="tag">Gitflow</span>
+										<span class="tag">Render</span>
+										<span class="tag">Netlify</span>
+									</div>
+									<a href="https://github.com/FranciscoArenas20/kino-henry-pf.git" target="_blank" class="button small project-link">Ver repositorio</a>
+								</div>
+
+								<!-- Proyecto 2: TommyBot -->
+								<div class="project-block">
+									<h3 class="project-title">🤖 TommyBot — Automatización de Atención al Cliente</h3>
+									<div class="project-images">
+										<img src="images/tommybot1.jpg" alt="TommyBot screenshot 1" />
+										<img src="images/tommybot2.jpg" alt="TommyBot screenshot 2" />
+										<img src="images/tommybot3.jpg" alt="TommyBot screenshot 3" />
+									</div>
+									<p>
+										Flujo de automatización centralizado en n8n que integra una API REST con Gemini (Google AI) 
+										para ofrecer atención al cliente vía WhatsApp de forma automatizada. El bot gestiona 
+										bases de datos en tiempo real, procesa pedidos y mantiene una conversación fluida con 
+										el usuario final, sin intervención humana.
+									</p>
+									<div class="project-tags">
+										<span class="tag">n8n</span>
+										<span class="tag">Node.js</span>
+										<span class="tag">Gemini API</span>
+										<span class="tag">REST API</span>
+										<span class="tag">WhatsApp</span>
+										<span class="tag">Automatización</span>
+									</div>
+									<a href="https://github.com/FranciscoArenas20/TommyBot.git" target="_blank" class="button small project-link">Ver repositorio</a>
+								</div>
+
+								<!-- Proyecto 3: Switching -->
+								<div class="project-block">
+									<h3 class="project-title">🌐 Switching — Página Web para Escuela de Idiomas</h3>
+									<div class="project-images">
+										<img src="images/switching1.jpg" alt="Switching screenshot 1" />
+										<img src="images/switching2.jpg" alt="Switching screenshot 2" />
+										<img src="images/switching3.jpg" alt="Switching screenshot 3" />
+									</div>
+									<p>
+										Sitio web institucional para una escuela de idiomas desarrollado en Next.js, 
+										conectado directamente a Supabase como BaaS para almacenamiento de leads 
+										y autenticación de terceros. Integra Sanity.io como CMS headless para que 
+										el equipo de la escuela gestione el contenido del sitio de forma autónoma, 
+										sin necesidad de intervención técnica.
+									</p>
+									<div class="project-tags">
+										<span class="tag">Next.js</span>
+										<span class="tag">Supabase</span>
+										<span class="tag">Sanity.io</span>
+										<span class="tag">TypeScript</span>
+										<span class="tag">CSS</span>
+										<span class="tag">BaaS</span>
+										<span class="tag">CMS</span>
+									</div>
+									<a href="https://github.com/FranciscoArenas20/bilingual.git" target="_blank" class="button small project-link">Ver repositorio</a>
+								</div>
+
+								<!-- Proyecto 4: InvestAgro -->
+								<div class="project-block">
+									<h3 class="project-title">📱 InvestAgro — Aplicación Móvil de Gestión de Productos</h3>
+									<div class="project-images">
+										<img src="images/investagro1.jpg" alt="InvestAgro screenshot 1" />
+										<img src="images/investagro2.jpg" alt="InvestAgro screenshot 2" />
+										<img src="images/investagro3.jpg" alt="InvestAgro screenshot 3" />
+									</div>
+									<p>
+										Aplicación móvil desarrollada como prueba técnica que consume una API con 50,000 registros 
+										simulados de productos agroindustriales. Implementa lista infinita con scroll eficiente 
+										(ListView.builder), búsqueda local sobre datos cacheados, y carga optimizada de imágenes 
+										sin re-descargas. El backend dockerizado en NestJS con PostgreSQL implementa paginación 
+										cursor-based, relaciones entre tablas y permisos. La arquitectura frontend sigue una 
+										separación limpia de capas (Data Sources, Repositories, Providers, UI) con inyección de 
+										dependencias mediante get_it y estrategia de caché con Riverpod + Hive para 
+										disponibilidad offline. Desplegado en Railway con APK generado para distribución.
+									</p>
+									<div class="project-tags">
+										<span class="tag">Flutter</span>
+										<span class="tag">Dart</span>
+										<span class="tag">NestJS</span>
+										<span class="tag">PostgreSQL</span>
+										<span class="tag">Riverpod</span>
+										<span class="tag">Hive</span>
+										<span class="tag">Docker</span>
+										<span class="tag">Railway</span>
+										<span class="tag">Clean Architecture</span>
+									</div>
+									<a href="https://github.com/FranciscoArenas20/LagroPT.git" target="_blank" class="button small project-link">Ver repositorio</a>
+								</div>
+
+							</article>
+
+						<!-- Skills -->
+							<article id="skills">
+								<h2 class="major">Skills</h2>
+								<div class="skills-grid">
+									<div class="skill-category">
+										<strong>Lenguajes</strong>
+										<span>JavaScript, TypeScript, Dart</span>
+									</div>
+									<div class="skill-category">
+										<strong>Backend</strong>
+										<span>NestJS, Node.js, Express, REST APIs</span>
+									</div>
+									<div class="skill-category">
+										<strong>Frontend</strong>
+										<span>React, Next.js, Flutter, Vite, HTML, CSS</span>
+									</div>
+									<div class="skill-category">
+										<strong>Bases de datos</strong>
+										<span>PostgreSQL, MongoDB, TypeORM</span>
+									</div>
+									<div class="skill-category">
+										<strong>Auth &amp; Seguridad</strong>
+										<span>OAuth, JWT, Supabase</span>
+									</div>
+									<div class="skill-category">
+										<strong>Cloud &amp; Deploy</strong>
+										<span>Cloudinary, Netlify, Render, Railway, Docker</span>
+									</div>
+									<div class="skill-category">
+										<strong>Herramientas</strong>
+										<span>Git, Gitflow, Swagger, Google Maps API</span>
+									</div>
+									<div class="skill-category">
+										<strong>Automatización</strong>
+										<span>n8n, Evolution API, Gemini API</span>
+									</div>
+								</div>
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
+								<h2 class="major">Contacto</h2>
+								<p>¿Tienes un proyecto en mente o quieres ponerte en contacto? Escríbeme directamente:</p>
+								<p>
+									📧 <a href="mailto:franciscoarenas.2094@gmail.com">franciscoarenas.2094@gmail.com</a>
+								</p>
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://github.com/FranciscoArenas20" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/franciscoarenas-dev" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								</ul>
-							</article>
-
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
 							</article>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Francisco Arenas 2025. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
